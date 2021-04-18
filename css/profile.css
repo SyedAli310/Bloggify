@@ -1,0 +1,93 @@
+
+.profile-wrapper{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.buttons{
+    text-decoration: none;
+    color: gray;
+}
+
+.buttons:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.blueTable{
+    margin: 5vh;
+}
+table.blueTable {
+    border: none;
+    background-color: #251f47;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    outline:none;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid white;
+    padding: 3px 2px;
+
+  }
+  table.blueTable tbody td {
+    font-size: 18px;
+    padding: 30px 25px;
+    color: white;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #251f47;
+  }
+  table.blueTable thead {
+    background: #1b1b1b;
+    border:none;
+  }
+  table.blueTable thead th {
+    font-size: 22px;
+    font-weight: bold;
+    color: beige;
+    padding: 30px 25px;
+    border-top:none;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+
+  .posts-msg{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  @media(max-width:786px){
+    table.blueTable{
+        width: 60%;
+    }
+    .table-responsive{
+        overflow-x: auto !important;
+    }
+      .table-responsive::-webkit-scrollbar {
+        width:5px !important;
+      }
+      .table-responsive::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .table-responsive::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: unset;
+      }
+      .table-responsive::-webkit-scrollbar-thumb:hover {
+        background: lightblue;
+      }
+  }
+  @media(max-width:400px){
+    table.blueTable{
+        width: 40%;
+    }
+  }
